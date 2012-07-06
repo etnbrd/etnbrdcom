@@ -304,7 +304,7 @@ a {
 }
 .nightSide .highlight {
   color: #141414;
-  text-shadow: #000000 0px 1px 1px;
+  text-shadow: #939393 0px 1px 1px;
   font-weight: bold;
   background: rgba(255, 255, 255, 0.2);
   -moz-transition: 0.4s;
