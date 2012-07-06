@@ -31,7 +31,7 @@ a {
   min-height: 100%;
   overflow: hidden;
   vertical-align: top;
-  padding-bottom: 300px;
+  padding-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
 }
 .nightSide .back,
@@ -163,8 +163,22 @@ a {
   background: url('png/dayGmail.png');
 }
 .daySide .highlight {
-  border-bottom: 1px dotted #066c7e;
-  background: rgba(6, 108, 126, 0.2);
+  color: #f0f0f0;
+  text-shadow: #717171 0px 1px 1px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.2);
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.daySide .highlight:hover {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: rgba(6, 108, 126, 0.5) 3px 3px 0px, rgba(239, 123, 89, 0.5) -3px -3px 0px;
+  background: rgba(0, 0, 0, 0.8);
 }
 .daySide .content {
   text-align: right;
@@ -174,7 +188,7 @@ a {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  text-shadow: rgba(6, 108, 126, 0.7) 2px 2px 0px, rgba(239, 123, 89, 0.7) -2px -2px 0px;
+  text-shadow: rgba(6, 108, 126, 0.5) 3px 3px 0px, rgba(239, 123, 89, 0.5) -3px -3px 0px;
 }
 .daySide li:after {
   content: "+";
@@ -289,8 +303,22 @@ a {
   background: url('png/nightGmail.png');
 }
 .nightSide .highlight {
-  border-bottom: 1px dotted #ef7b59;
-  background: rgba(239, 123, 89, 0.2);
+  color: #141414;
+  text-shadow: #000000 0px 1px 1px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.2);
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.nightSide .highlight:hover {
+  -moz-transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: rgba(239, 123, 89, 0.5) 3px 3px 0px, rgba(6, 108, 126, 0.5) -3px -3px 0px;
+  background: rgba(255, 255, 255, 0.8);
 }
 .nightSide .content {
   text-align: left;
@@ -300,7 +328,7 @@ a {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
-  text-shadow: rgba(239, 123, 89, 0.7) -2px -2px 0px, rgba(6, 108, 126, 0.7) 2px 2px 0px;
+  text-shadow: rgba(239, 123, 89, 0.5) -3px -3px 0px, rgba(6, 108, 126, 0.5) 3px 3px 0px;
 }
 .nightSide li:before {
   content: "+";
@@ -860,4 +888,9 @@ body:hover #night:target ~ .daySide:hover .content {
   -webkit-transition: 1.4s;
   -o-transition: 1.4s;
   transition: 1.4s;
+}
+@media screen and (max-width: 640px) {
+  html {
+    width: 640px;
+  }
 }

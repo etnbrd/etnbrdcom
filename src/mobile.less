@@ -42,9 +42,9 @@
 
 @parallaxFactorBack :		0.1;
 @parallaxFactorMiddle :		0.5;
-@parallaxFactorFront :		0.3;
+@parallaxFactorFront :		0.15;
 
-@parallaxReference :		1000px;
+@parallaxReference :		500px;
 
 // ***********************************
 // Content specific
@@ -384,17 +384,8 @@ a {
 	}
 
 	.highlight {
-		color: @dayBg;		
-		text-shadow: darken(@dayBg, 50%) 0px 1px 1px;
-		font-weight: bold;
-		background: fade(black, 20%);
-		.transition(0.4s);
-
-		&:hover {
-			.transition(0.4s);
-			box-shadow: fade(@dayHigh, 50%) 3px 3px 0px, fade(@nightHigh, 50%) -3px -3px 0px;
-			background: fade(black, 80%);
-		}		
+		border-bottom: 1px dotted @dayHigh;
+		background: fade(@dayHigh, 20%);
 	}
 
 	.content {
@@ -404,7 +395,7 @@ a {
 	li {
 		&:hover {
 			.transition(0.4s);
-			text-shadow: fade(@dayHigh, 50%) 3px 3px 0px, fade(@nightHigh, 50%) -3px -3px 0px;
+			text-shadow: fade(@dayHigh, 70%) 2px 2px 0px, fade(@nightHigh, 70%) -2px -2px 0px;
 		}
 
 		&:after {
@@ -524,17 +515,8 @@ a {
 	}
 
 	.highlight {
-		color: @nightBg;		
-		text-shadow: darken(@nightBg, 50%) 0px 1px 1px;
-		font-weight: bold;
-		background: fade(white, 20%);
-		.transition(0.4s);
-
-		&:hover {
-			.transition(0.4s);
-			box-shadow: fade(@nightHigh, 50%) 3px 3px 0px, fade(@dayHigh, 50%) -3px -3px 0px;
-			background: fade(white, 80%);
-		}	
+		border-bottom: 1px dotted @nightHigh;
+		background: fade(@nightHigh, 20%);
 	}
 
 	.content {
@@ -544,7 +526,7 @@ a {
 	li {
 		&:hover {
 			.transition(0.4s);
-			text-shadow: fade(@nightHigh, 50%) -3px -3px 0px, fade(@dayHigh, 50%) 3px 3px 0px;
+			text-shadow: fade(@nightHigh, 70%) -2px -2px 0px, fade(@dayHigh, 70%) 2px 2px 0px;
 		}
 
 		&:before {
