@@ -484,6 +484,7 @@ body:hover .nightSide:hover .content {
   transition: 0.3999999999999999s;
 }
 .daySide {
+  cursor: pointer;
   width: 50%;
   -moz-transition: 0.3999999999999999s;
   -webkit-transition: 0.3999999999999999s;
@@ -531,6 +532,7 @@ body:hover .nightSide:hover .content {
   transition: 0.3999999999999999s;
 }
 .nightSide {
+  cursor: pointer;
   width: 50%;
   -moz-transition: 0.3999999999999999s;
   -webkit-transition: 0.3999999999999999s;
@@ -718,6 +720,7 @@ body:hover #night:target ~ .daySide:hover .content {
   transition: 0.19999999999999973s;
 }
 #day:target ~ .daySide {
+  cursor: default;
   width: 95%;
   -moz-transition: 1.4s;
   -webkit-transition: 1.4s;
@@ -804,6 +807,7 @@ body:hover #night:target ~ .daySide:hover .content {
   transition: 1.4s;
 }
 #night:target ~ .nightSide {
+  cursor: default;
   width: 95%;
   -moz-transition: 1.4s;
   -webkit-transition: 1.4s;

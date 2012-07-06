@@ -609,6 +609,7 @@ body:hover {
 // ***********************************
 
 .daySide {
+	cursor: pointer;
 	.widthSplitted;
 	.icon {				.dayParallaxSplitted(@iconSize);		}
 	.common {				.dayParallaxSplitted(@pageWidth);		}
@@ -617,6 +618,7 @@ body:hover {
 }
 
 .nightSide {
+	cursor: pointer;
 	.widthSplitted;
 	.icon {				.nightParallaxSplitted(@iconSize);		}	
 	.common {				.nightParallaxSplitted(@pageWidth);		}
@@ -668,6 +670,7 @@ body:hover {
 // ***********************************
 
 #day:target ~ .daySide {
+	cursor: default;
 	.widthExpanded;
 	.back {
 		visibility: hidden;
@@ -696,6 +699,7 @@ body:hover {
 }
 
 #night:target ~ .nightSide {
+	cursor: default;
 	.widthExpanded;
 	.back {
 		visibility: hidden;
