@@ -53,7 +53,7 @@
 @pageWidth :		800px;
 @contentMargin :	-60px;
 
-@borderSize :		3px;
+@borderSize :		0px;
 @iconSize :			140px;
 
 @linkNumber :		6;  // actually the number max of links
@@ -356,7 +356,7 @@ a {
 
 .daySide {
 	background: @dayBg;
-	border-right: @borderSize solid darken(@dayBg, 20%);
+	box-shadow: inset darken(@dayBg, 20%) -3px 0px 0;
 	color: @dayColor;
 	text-shadow: lighten(@dayBg, 100%) 0px 1px 1px;
 
@@ -496,7 +496,7 @@ a {
 
 .nightSide {
 	background: @nightBg;
-	border-left: @borderSize solid lighten(@nightBg, 20%);
+	box-shadow: inset lighten(@nightBg, 20%) 3px 0px 0;	
 	color: @nightColor;
 	text-shadow: darken(@nightBg, 100%) 0px 1px 1px ;
 
@@ -725,14 +725,4 @@ body:hover {
 	.links {			.dayParallaxCollapsed(@linksWidth, @parallaxFactorMiddle);			}
 	.content {			.dayParallaxCollapsed(@contentMargin, @parallaxFactorFront);		}
 
-}
-
-// ***********************************
-// Version mobile
-// ***********************************
-
-@media screen and (max-width: 640px) {
-	html {
-		width: 640px;
-	}
 }
