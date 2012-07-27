@@ -64,8 +64,9 @@ a {
             list-style-type: none;
             text-align: right; }
     #heading #content #intro {
-      font-size: 16pt;
       padding-left: 40px; }
+    #heading #content #intro::first-line {
+      font-size: 16pt; }
     #heading #content .left {
       display: inline-block;
       width: 357px; }
