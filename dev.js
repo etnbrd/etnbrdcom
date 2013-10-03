@@ -9,6 +9,7 @@ var blue   = '\033[36m',
 		reset  = '\033[0m';
 
 app.use(express.static(__dirname + publicDir));
+
 app.listen(port, function() {
   console.log(blue + 'starting Express\n' + reset +
   						gray +'>>>' + reset + ' Listening on ' + green + port + reset);
