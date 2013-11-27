@@ -1,8 +1,19 @@
 {
-  "name": "node-example",
-  "version": "0.0.1",
+  "name": "etnbrdcom",
+  "author": {
+    "name": "etnbrd"
+  },
+  "version": "0.1.1",
   "dependencies": {
-    "express": "2.5.x"
+    "express": ">= 2.5.0"
+  },
+  "devDependencies": {
+    "grunt": ">= 0.4.2",
+    "grunt-contrib-less": ">= 0.8.2",
+    "grunt-lessless": ">= 0.1.2",
+    "grunt-html": ">= 0.3.4",
+    "grunt-html-build": ">= 0.3.1",
+    "grunt-contrib-copy": ">= 0.4.1"
   },
   "engines": {
     "node": "0.6.x"
