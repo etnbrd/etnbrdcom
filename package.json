@@ -4,8 +4,9 @@
     "name": "etnbrd"
   },
   "version": "0.1.1",
+  "repository": "https://github.com/etnbrd/etnbrdcom",
   "dependencies": {
-    "express": ">= 2.5.0"
+    "express": ">= 4.0"
   },
   "devDependencies": {
     "grunt": ">= 0.4.2",
