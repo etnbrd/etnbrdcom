@@ -1,39 +1,29 @@
-// var express = require('express'),
-//     app = express(),
-// 		publicDir = '/pub',
-// 		port = process.env.PORT || 5000;
-
-var blue   = '\033[36m',
-		green  = '\033[32m',
-		gray   = '\033[1;30m',
-		reset  = '\033[0m';
-
-// app.use(express.static(__dirname + publicDir));
-// app.listen(port, function() {
-//   console.log(blue + 'starting Express\n' + reset +
-//   						gray +'>>>' + reset + ' Listening on ' + green + port + reset);
-// });
-
-var fs = require('fs');
-var https = require('https');
-var privateKey  = fs.readFileSync('/home/etnbrdcom/certs/key.pem', 'utf8');
-var certificate = fs.readFileSync('/home/etnbrdcom/certs/cert.pem', 'utf8');
-
-
-var credentials = {key: privateKey, cert: certificate};
-var express = require('express');
-var app = express();
-
-var express = require('express'),
+var fs = require('fs'),
+    http = require('http'),
+    https = require('https'),
+    express = require('express'),
     app = express(),
-    publicDir = '/pub',
+    pub = '/pub',
     port = process.env.PORT || 5000;
 
-app.use(express.static(__dirname + publicDir));
+var blue   = '\033[36m',
+    green  = '\033[32m',
+    gray   = '\033[1;30m',
+    reset  = '\033[0m';
 
-https
-  .createServer(credentials, app)
-  .listen(port, function() {
-    console.log(blue + 'starting Express\n' + reset +
-                gray + '>>>' + reset + ' Listening on ' + green + port + reset);
-  });
+var credentials = {
+  key: fs.readFileSync('/home/etnbrdcom/certs/key.pem', 'utf8'),
+  cert: fs.readFileSync('/home/etnbrdcom/certs/cert.pem', 'utf8')
+};
+
+function log(port) {
+  return function() {
+    console.log(gray + '>>>' + reset + ' Listening on ' + green + port + reset);
+  }
+}
+
+app.use(express.static(__dirname + pub));
+console.log(blue + 'starting Express' + reset);
+
+http.createServer(app).listen(port, log(port));
+https.createServer(credentials, app).listen(port + 443, log(port + 443));
