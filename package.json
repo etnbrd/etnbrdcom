@@ -6,17 +6,12 @@
   "version": "0.1.1",
   "repository": "https://github.com/etnbrd/etnbrdcom",
   "dependencies": {
-    "express": ">= 4.0"
+    "express": ">= 4.14"
   },
-  "devDependencies": {
-    "grunt": ">= 0.4.2",
-    "grunt-contrib-less": ">= 0.8.2",
-    "grunt-lessless": ">= 0.1.2",
-    "grunt-html": ">= 0.3.4",
-    "grunt-html-build": ">= 0.3.1",
-    "grunt-contrib-copy": ">= 0.4.1"
+  "scripts": {
+    "start": "node web.js"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": ">= 6.0"
   }
 }

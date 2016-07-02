@@ -1,6 +1,6 @@
 var express = require('express'),
     app = express(),
-		publicDir = '/public',
+		publicDir = '/pub',
 		port = process.env.PORT || 5000;
 
 var blue   = '\033[36m',
