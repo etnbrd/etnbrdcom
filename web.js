@@ -16,8 +16,9 @@ var blue   = '\033[36m',
 
 var fs = require('fs');
 var https = require('https');
-var privateKey  = fs.readFileSync('/home/etnbrdcom/certs/etnbrd.com/key.pem', 'utf8');
-var certificate = fs.readFileSync('/home/etnbrdcom/certs/etnbrd.com/cert.pem', 'utf8');
+var privateKey  = fs.readFileSync('/home/etnbrdcom/certs/key.pem', 'utf8');
+var certificate = fs.readFileSync('/home/etnbrdcom/certs/cert.pem', 'utf8');
+
 
 var credentials = {key: privateKey, cert: certificate};
 var express = require('express');
