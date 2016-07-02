@@ -17,4 +17,4 @@ USER etnbrdcom
 ADD . /home/etnbrdcom
 
 # Don't use an entrypoint here. It makes debugging difficult.
-CMD cd /home/etnbrdcom; npm start
+CMD cd /home/etnbrdcom; node web.js
