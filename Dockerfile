@@ -8,7 +8,7 @@ FROM nfnty/arch-nodejs
 RUN useradd --create-home etnbrdcom
 
 # Expose HTTP
-EXPOSE 9000
+EXPOSE 5000
 
 # Drop root.
 USER etnbrdcom
