@@ -139,22 +139,21 @@ h1 hr {
   transform: rotate(15deg);
 }
 
-// .appear.one { animation: fade 5s ease .5s both; }
-// .appear.two { animation: fade 5s ease 1s both; }
-//  h1 p:after,
-// .appear.three { animation: fade 5s ease 2s both; }
-// .appear.four { animation: fade 5s ease 3s both; }
-// .appear.five { animation: fade 5s ease 4s both; }
-// .appear.six { animation: fade 5s ease 5s both; }
-// .appear.seven { animation: fade 5s ease 6s both; }
-// .appear.eight { animation: fade 5s ease 7s both; }
-// .appear.nine { animation: fade 5s ease 8s both; }
+.appear.one { animation: fade 5s ease .5s both; }
+.appear.two { animation: fade 5s ease 1s both; }
+ h1 p:after,
+.appear.three { animation: fade 5s ease 2s both; }
+.appear.four { animation: fade 5s ease 3s both; }
+.appear.five { animation: fade 5s ease 4s both; }
+.appear.six { animation: fade 5s ease 5s both; }
+.appear.seven { animation: fade 5s ease 6s both; }
+.appear.eight { animation: fade 5s ease 7s both; }
+.appear.nine { animation: fade 5s ease 8s both; }
 
-// @keyframes fade {
-//     0%{opacity: 0}
-//     100%{opacity: 1}
-// }
-
+@keyframes fade {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
 
 .links {
   position: relative;
