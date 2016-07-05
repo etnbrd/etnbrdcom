@@ -266,12 +266,11 @@ h1 hr {
 
 @keyframes background {
     0% { background-color: #82009b }
-    16% { background-color: #ff0049 }
-    32% { background-color: #F49F4C }
-    50% { background-color: #00f4c5 }
-    66% { background-color: #3975b2 }
-    82% { background-color: #82009b }
-    100% { background-color: #ff0049 }
+    20% { background-color: #ff0049 }
+    40% { background-color: #F49F4C }
+    60% { background-color: #00f4c5 }
+    80% { background-color: #3975b2 }
+    100% { background-color: #82009b }
 }
 
 .links .github:before { content: '\e030'; }
