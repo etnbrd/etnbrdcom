@@ -28,7 +28,7 @@ function checkCerts(trials, cb) {
   var i = 2;
 
   fs.access(credPath.key, fs.F_OK, check('key'));
-  fs.access(credPath.cert, fs.F_OK check('cert'));
+  fs.access(credPath.cert, fs.F_OK, check('cert'));
 
   function check(file){
     return function (err) {
