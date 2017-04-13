@@ -2,7 +2,7 @@ var fs = require('fs'),
     http = require('http'),
     express = require('express'),
     app = express(),
-    pub = '/pub',
+    pub = '/public',
     port = process.env.PORT || 5000;
 
 var blue   = '\033[36m',
